@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:VM="clr-namespace:ReminderApp.ViewModels"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d" NavigationPage.HasNavigationBar="False"
+             x:Class="ReminderApp.Views.HomePage">
+    <ContentPage.BindingContext>
+        <VM:HomePageViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid Padding="10" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <!--Header-->
+            <Label Grid.Row="0" Text="Home" BackgroundColor="#4f76bb" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="18" Margin="-10"/>
+            <!--Reminders List-->
+            <ListView x:Name="remindersList" ItemsSource="{Binding ReminderList}" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="Fill" HasUnevenRows="True" SeparatorVisibility="None" VerticalScrollBarVisibility="Never" SelectedItem="{Binding ReminderItem}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BackgroundColor="White" BorderColor="LightGray" HasShadow="True" Padding="5" Margin="10,10">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="20"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding Title}" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center" FontSize="16" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Description}" Grid.Row="1" HorizontalOptions="Start" VerticalOptions="Center" FontSize="12" MaxLines="3" LineBreakMode="TailTruncation"/>
+                                    <Label Text="{Binding Date}" Grid.Row="2" HorizontalOptions="Start" VerticalOptions="Center" FontSize="10"/>
+                                    <Label Text="{Binding Time}" Grid.Row="2" HorizontalOptions="End" VerticalOptions="Center" FontSize="10"/>
+                                </Grid> 
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--Add Button-->
+            <Button Grid.Row="2" Text="Add Reminder" CornerRadius="2" BackgroundColor="#4f76bb" TextColor="White" HorizontalOptions="Fill" VerticalOptions="Fill" Padding="0" Command="{Binding AddReminderTap}"/>
+            <!--Update Button-->
+            <Button Grid.Row="3" Text="Update/Delete Existing Reminder" CornerRadius="2" BackgroundColor="#4f76bb" TextColor="White" HorizontalOptions="Fill" VerticalOptions="Fill" Padding="0" Command="{Binding LoginCommand}"/>
+            <!--Logout Button-->
+            <Button Grid.Row="4" Text="Logout" CornerRadius="2" BackgroundColor="#4f76bb" TextColor="White" HorizontalOptions="Fill" VerticalOptions="Fill" Padding="0" Command="{Binding LogoutTap}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

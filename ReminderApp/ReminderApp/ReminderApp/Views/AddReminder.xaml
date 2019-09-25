@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:VM="clr-namespace:ReminderApp.ViewModels"
+             ios:Page.UseSafeArea="true"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="ReminderApp.Views.AddReminder">
+    <ContentPage.BindingContext>
+        <VM:AddReminderViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid Padding="10" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <!--Header-->
+            <Label Grid.Row="0" Text="Add Reminder" BackgroundColor="#4f76bb" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="18" Margin="-10"/>
+            <Image Source="back_arrow" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center" Margin="5" HeightRequest="20" WidthRequest="20">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BackButtonTapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            
+            <!--Date Field-->
+            <Label Text="Date" Grid.Row="1" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" FontSize="14" FontAttributes="Bold"/>
+            <Button Grid.Row="2" BackgroundColor="#f3f3f3" BorderColor="LightGray" BorderWidth="1" IsEnabled="False" CornerRadius="2" HorizontalOptions="Fill" VerticalOptions="Fill" Margin="0,0,35,0"/>
+            <DatePicker x:Name="datepicker" Grid.Row="2" BackgroundColor="Transparent" Margin="2,2,35,2" FontSize="14" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Black" Date="{Binding Date}"/>
+            <Image Source="calender" Grid.Row="2" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="30" WidthRequest="30">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="calenderIcon_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            
+            <!--Time Field-->
+            <Label Text="Time" Grid.Row="3" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" FontSize="14" FontAttributes="Bold"/>
+            <Button Grid.Row="4" BackgroundColor="#f3f3f3" BorderColor="LightGray" BorderWidth="1" IsEnabled="False" CornerRadius="2" HorizontalOptions="Fill" VerticalOptions="Fill" Margin="0,0,35,0"/>
+            <TimePicker x:Name="timepicker" Grid.Row="4" BackgroundColor="Transparent" Margin="2,2,35,2" FontSize="14" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Black" Time="{Binding Time}"/>
+            <Image Source="clock" Grid.Row="4" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="30" WidthRequest="30">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="clockIcon_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            
+            <!--Title Field-->
+            <Label Text="Title" Grid.Row="5" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" FontSize="14" FontAttributes="Bold"/>
+            <Button Grid.Row="6" BackgroundColor="#f3f3f3" BorderColor="LightGray" BorderWidth="1" IsEnabled="False" CornerRadius="2" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Entry Grid.Row="6" Text="{Binding Title}" BackgroundColor="Transparent" Margin="2" PlaceholderColor="LightGray" Placeholder="Enter Title" FontSize="14" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Black"/>
+
+            <!--Description Field-->
+            <Label Text="Description" Grid.Row="7" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" FontSize="14" FontAttributes="Bold"/>
+            <Button Grid.Row="8" BackgroundColor="#f3f3f3" BorderColor="LightGray" BorderWidth="1" IsEnabled="False" CornerRadius="2" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Editor Grid.Row="8"  Text="{Binding Description}" BackgroundColor="Transparent" Margin="2" PlaceholderColor="LightGray" Placeholder="Enter Description" FontSize="14" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Black" AutoSize="TextChanges"/>
+            
+            <!--Add Button-->
+            <Button Grid.Row="10" Text="Add" WidthRequest="100" CornerRadius="2" BackgroundColor="#4f76bb" TextColor="White" HorizontalOptions="End" VerticalOptions="Fill" Padding="0" Command="{Binding AddButtonClicked}"/>
+        </Grid>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

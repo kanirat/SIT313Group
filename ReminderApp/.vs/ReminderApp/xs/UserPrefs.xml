@@ -1,26 +1,26 @@
-﻿<Properties StartupConfiguration="{A8A968E5-9B0A-49EA-9EFB-863A88FB2BB4}|Default">
-  <MonoDevelop.Ide.ItemProperties.ReminderApp.UITests FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ReminderApp/ViewModel/AddPageViewModel.cs">
+﻿<Properties StartupConfiguration="{0C18E3E3-7317-4A3F-9252-5ABC0548DCBB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ReminderApp/ReminderApp/ViewModels/LoginPageViewModel.cs">
     <Files>
-      <File FileName="ReminderApp/ViewModel/HomePageViewModel.cs" Line="57" Column="13" />
-      <File FileName="ReminderApp/View/AddPage.xaml" Line="1" Column="1" />
-      <File FileName="ReminderApp/View/HomePage.xaml" Line="1" Column="1" />
-      <File FileName="ReminderApp/ViewModel/AddPageViewModel.cs" Line="68" Column="82" />
-      <File FileName="ReminderApp/Model/Reminder.cs" Line="1" Column="1" />
-      <File FileName="ReminderApp/Data/Database.cs" Line="39" Column="62" />
+      <File FileName="ReminderApp/ReminderApp/Data/Database.cs" Line="2" Column="26" />
+      <File FileName="ReminderApp/ReminderApp/ViewModels/HomePageViewModel.cs" />
+      <File FileName="ReminderApp/ReminderApp/Views/HomePage.xaml" />
+      <File FileName="ReminderApp/ReminderApp/Models/Reminder.cs" />
+      <File FileName="ReminderApp/ReminderApp/ViewModels/AddReminderViewModel.cs" />
+      <File FileName="ReminderApp/ReminderApp/Views/AddReminder.xaml" />
+      <File FileName="ReminderApp/ReminderApp/ViewModels/LoginPageViewModel.cs" Line="66" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ReminderApp" expanded="True">
             <Node name="ReminderApp" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Model" expanded="True" />
-              <Node name="View" expanded="True" />
-              <Node name="ViewModel" expanded="True">
-                <Node name="AddPageViewModel.cs" selected="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="LoginPageViewModel.cs" selected="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -33,6 +33,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ReminderApp.iOS FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.ReminderApp.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
 </Properties>

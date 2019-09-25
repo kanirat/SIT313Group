@@ -1,0 +1,16 @@
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/bin/Debug/netstandard2.0/ReminderApp.deps.json
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/bin/Debug/netstandard2.0/ReminderApp.dll
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/bin/Debug/netstandard2.0/ReminderApp.pdb
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/ReminderApp.csprojAssemblyReference.cache
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/Views/AddReminder.xaml.g.cs
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/Views/HomePage.xaml.g.cs
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/Views/LoginPage.xaml.g.cs
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/Views/SignUpPage.xaml.g.cs
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/ReminderApp.csproj.CoreCompileInputs.cache
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/ReminderApp.AssemblyInfoInputs.cache
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/ReminderApp.AssemblyInfo.cs
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/ReminderApp.dll
+/Users/kani/Downloads/ReminderApp/ReminderApp/ReminderApp/obj/Debug/netstandard2.0/ReminderApp.pdb

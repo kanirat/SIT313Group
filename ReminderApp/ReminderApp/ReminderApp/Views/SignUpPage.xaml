@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="ReminderApp.Views.SignUpPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <!--Logo-->
+                <Image Source="logo" Grid.Row="0" HeightRequest="150" WidthRequest="150" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <!--Email Field-->
+                <Label Text="Email" Grid.Row="1" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" FontSize="14" FontAttributes="Bold"/>
+                <Button Grid.Row="2" BackgroundColor="#f3f3f3" BorderColor="LightGray" BorderWidth="1" IsEnabled="False" CornerRadius="2" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+                <Entry Grid.Row="2" Text="{Binding Email}" BackgroundColor="Transparent" Margin="2" PlaceholderColor="LightGray" Placeholder="Enter Email" FontSize="14" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Black"/>
+                <!--Password Field-->
+                <Label Text="Password" Grid.Row="3" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" FontSize="14" FontAttributes="Bold"/>
+                <Button Grid.Row="4" BackgroundColor="#f3f3f3" BorderColor="LightGray" BorderWidth="1" IsEnabled="False" CornerRadius="2" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+                <Entry Grid.Row="4" Text="{Binding Password}" BackgroundColor="Transparent" Margin="2" PlaceholderColor="LightGray" Placeholder="Enter Password" FontSize="14" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Black"/>
+                <!--Confirm Password Field-->
+                <Label Text="Confirm Password" Grid.Row="5" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" FontSize="14" FontAttributes="Bold"/>
+                <Button Grid.Row="6" BackgroundColor="#f3f3f3" BorderColor="LightGray" BorderWidth="1" IsEnabled="False" CornerRadius="2" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+                <Entry Grid.Row="6" Text="{Binding Password}" BackgroundColor="Transparent" Margin="2" PlaceholderColor="LightGray" Placeholder="Confirm Password" FontSize="14" HorizontalOptions="Fill" VerticalOptions="Center" TextColor="Black"/>
+                <!--Login Button-->
+                <Button Grid.Row="8" Text="Sign Up" CornerRadius="2" BackgroundColor="#4f76bb" TextColor="White" HorizontalOptions="Fill" VerticalOptions="Fill" Padding="0" Command="{Binding LoginCommand}"/>
+                <Label Grid.Row="10" HorizontalOptions="Center" VerticalOptions="Center" FontSize="12">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Already have an Account? " TextColor="Black"/>
+                            <Span Text="Login" TextColor="#4f76bb" FontAttributes="Bold">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
