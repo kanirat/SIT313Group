@@ -15,6 +15,8 @@ namespace ReminderApp.Data
         {
             Reminder_Database = MtSql.Current.GetConnectionAsync("reminder.db");
             Reminder_Database.CreateTableAsync<Reminder>().Wait();
+
+            //Reminder_Database.InsertAsync(new Reminder { Title = "test", Description = "test" });
         }
 
        /* public void AddData(string title, string description, DateTime reminderDate)
@@ -30,6 +32,11 @@ namespace ReminderApp.Data
         public async Task AddReminderAsync(Reminder newReminder)
         {
             await Reminder_Database.InsertAsync(newReminder);
+        }
+
+        public async Task UpdateAsync(Reminder newReminder)
+        {
+            await Reminder_Database.UpdateAsync(newReminder);
         }
     }
 }

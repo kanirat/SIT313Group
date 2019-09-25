@@ -1,20 +1,27 @@
 ﻿<Properties StartupConfiguration="{A8A968E5-9B0A-49EA-9EFB-863A88FB2BB4}|Default">
   <MonoDevelop.Ide.ItemProperties.ReminderApp.UITests FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ReminderApp/ViewModel/HomePageViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ReminderApp/ViewModel/AddPageViewModel.cs">
     <Files>
-      <File FileName="ReminderApp/View/HomePage.xaml" Line="14" Column="35" />
-      <File FileName="ReminderApp/View/HomePage.xaml.cs" Line="14" Column="64" />
-      <File FileName="ReminderApp/ViewModel/HomePageViewModel.cs" Line="52" Column="74" />
+      <File FileName="ReminderApp/ViewModel/HomePageViewModel.cs" Line="57" Column="13" />
       <File FileName="ReminderApp/View/AddPage.xaml" Line="1" Column="1" />
-      <File FileName="ReminderApp/View/AddPage.xaml.cs" Line="16" Column="1" />
-      <File FileName="ReminderApp/View/UpdatePage.xaml" Line="1" Column="1" />
-      <File FileName="ReminderApp/View/UpdatePage.xaml.cs" Line="1" Column="1" />
+      <File FileName="ReminderApp/View/HomePage.xaml" Line="1" Column="1" />
+      <File FileName="ReminderApp/ViewModel/AddPageViewModel.cs" Line="68" Column="82" />
+      <File FileName="ReminderApp/Model/Reminder.cs" Line="1" Column="1" />
+      <File FileName="ReminderApp/Data/Database.cs" Line="39" Column="62" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ReminderApp" expanded="True">
-            <Node name="ReminderApp" expanded="True" />
+            <Node name="ReminderApp" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="View" expanded="True" />
+              <Node name="ViewModel" expanded="True">
+                <Node name="AddPageViewModel.cs" selected="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

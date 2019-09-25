@@ -12,8 +12,15 @@
         <StackLayout
             Spacing="5" 
             x:Name="StackLayout1">
-            <ListView>
-                
+
+
+            <ListView ItemsSource="{Binding ReminderList}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Title}" TextColor="Black" Detail="{Binding Description}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
             </ListView>
             <Button
             Command="{Binding AddButtonClicked}"
@@ -22,6 +29,7 @@
             VerticalOptions="Fill"/>
             
             <Button
+            Command="{Binding UpdateButtonClicked}"
             Text="Update/Delete Existing Reminders"
             x:Name="btnUpdateDelete"
             VerticalOptions="Fill"/>

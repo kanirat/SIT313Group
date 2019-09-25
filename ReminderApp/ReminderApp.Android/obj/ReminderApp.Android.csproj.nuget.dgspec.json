@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kani/Projects/ReminderApp/ReminderApp.Android/ReminderApp.Android.csproj": {}
+    "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp.Android/ReminderApp.Android.csproj": {}
   },
   "projects": {
-    "/Users/kani/Projects/ReminderApp/ReminderApp.Android/ReminderApp.Android.csproj": {
+    "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp.Android/ReminderApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kani/Projects/ReminderApp/ReminderApp.Android/ReminderApp.Android.csproj",
+        "projectUniqueName": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp.Android/ReminderApp.Android.csproj",
         "projectName": "ReminderApp.Android",
-        "projectPath": "/Users/kani/Projects/ReminderApp/ReminderApp.Android/ReminderApp.Android.csproj",
+        "projectPath": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp.Android/ReminderApp.Android.csproj",
         "packagesPath": "/Users/kani/.nuget/packages/",
-        "outputPath": "/Users/kani/Projects/ReminderApp/ReminderApp.Android/obj/",
+        "outputPath": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/kani/Projects/ReminderApp/ReminderApp/ReminderApp.csproj": {
-                "projectPath": "/Users/kani/Projects/ReminderApp/ReminderApp/ReminderApp.csproj"
+              "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp/ReminderApp.csproj": {
+                "projectPath": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp/ReminderApp.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "/Users/kani/Projects/ReminderApp/ReminderApp/ReminderApp.csproj": {
+    "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp/ReminderApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kani/Projects/ReminderApp/ReminderApp/ReminderApp.csproj",
+        "projectUniqueName": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp/ReminderApp.csproj",
         "projectName": "ReminderApp",
-        "projectPath": "/Users/kani/Projects/ReminderApp/ReminderApp/ReminderApp.csproj",
+        "projectPath": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp/ReminderApp.csproj",
         "packagesPath": "/Users/kani/.nuget/packages/",
-        "outputPath": "/Users/kani/Projects/ReminderApp/ReminderApp/obj/",
+        "outputPath": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

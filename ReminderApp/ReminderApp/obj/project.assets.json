@@ -728,11 +728,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kani/Projects/ReminderApp/ReminderApp/ReminderApp.csproj",
+      "projectUniqueName": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp/ReminderApp.csproj",
       "projectName": "ReminderApp",
-      "projectPath": "/Users/kani/Projects/ReminderApp/ReminderApp/ReminderApp.csproj",
+      "projectPath": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp/ReminderApp.csproj",
       "packagesPath": "/Users/kani/.nuget/packages/",
-      "outputPath": "/Users/kani/Projects/ReminderApp/ReminderApp/obj/",
+      "outputPath": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

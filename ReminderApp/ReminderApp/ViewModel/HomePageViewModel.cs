@@ -12,6 +12,7 @@ namespace ReminderApp.ViewModel
 {
     public class HomePageViewModel:INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public HomePageViewModel()
         {
@@ -20,10 +21,9 @@ namespace ReminderApp.ViewModel
 
         public INavigation Navigation { get; set; }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        
 
-        /*Database _database = new Database();
-        public event PropertyChangedEventHandler PropertyChanged;
+        Database _database = new Database();
 
         private ObservableCollection<Reminder> _reminderList;
 
@@ -42,8 +42,8 @@ namespace ReminderApp.ViewModel
         {
             var list = await _database.GetAllRemindersAsync();
             ReminderList = new ObservableCollection<Reminder>(list);
-        }*/
-
+        }
+        
         public HomePageViewModel(INavigation navigation)
         {
 
@@ -51,10 +51,11 @@ namespace ReminderApp.ViewModel
 
             this.AddButtonClicked = new Command(async () => await GoToAdd());
             this.UpdateButtonClicked = new Command(async () => await GoToUpdate());
+            
 
 
             
-            //FetchDataAsync();
+            FetchDataAsync();
             
         }
 

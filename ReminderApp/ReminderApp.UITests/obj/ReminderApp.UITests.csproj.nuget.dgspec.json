@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kani/Projects/ReminderApp/ReminderApp.UITests/ReminderApp.UITests.csproj": {}
+    "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp.UITests/ReminderApp.UITests.csproj": {}
   },
   "projects": {
-    "/Users/kani/Projects/ReminderApp/ReminderApp.UITests/ReminderApp.UITests.csproj": {
+    "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp.UITests/ReminderApp.UITests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kani/Projects/ReminderApp/ReminderApp.UITests/ReminderApp.UITests.csproj",
+        "projectUniqueName": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp.UITests/ReminderApp.UITests.csproj",
         "projectName": "ReminderApp.UITests",
-        "projectPath": "/Users/kani/Projects/ReminderApp/ReminderApp.UITests/ReminderApp.UITests.csproj",
+        "projectPath": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp.UITests/ReminderApp.UITests.csproj",
         "packagesPath": "/Users/kani/.nuget/packages/",
-        "outputPath": "/Users/kani/Projects/ReminderApp/ReminderApp.UITests/obj/",
+        "outputPath": "/Users/kani/Desktop/SIT313Group/SIT313Group/ReminderApp/ReminderApp.UITests/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [

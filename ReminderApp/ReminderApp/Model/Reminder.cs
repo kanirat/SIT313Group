@@ -8,7 +8,7 @@ namespace ReminderApp.Model
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string Title { get; set; }
-        public DateTime ReminderDate { get; set; }
+       // public DateTime ReminderDate { get; set; }
         public string Description { get; set; }
 
         public Reminder()
@@ -16,10 +16,10 @@ namespace ReminderApp.Model
 
         }
 
-        public Reminder(string title, DateTime dateTime, string description)
+        public Reminder(string title, /*DateTime dateTime,*/ string description)
         {
             Title = title;
-            ReminderDate = dateTime;
+            //ReminderDate = dateTime;
             Description = description;
         }
     }
